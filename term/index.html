@@ -1,0 +1,71 @@
+
+<html><head><meta charset="utf-8" /><title>frost</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="keywords" content="discord, terminal, shell, command-line"><link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet"><link href="assets/css/vvv.min.css" rel="stylesheet" type="text/css" /></head><body>
+  
+  <div id="rain-shell">
+
+<link rel="shortcut icon" href="https://portridgefield.org/wp-content/uploads/ghost-png-icon-16-copy.png" type="image/gif">
+
+<h2><t style="font-style: italic; color:lime; font-size:30px; "> <div id="username"> <div id="command-line"></t></h2></p>
+<script>
+let person = prompt("Username", "visitor");
+if (person != null) {
+  document.getElementById("username").innerHTML =
+  "welcome " + person + "! ";
+}
+</script>
+
+<p style="font-size:13px;">> <span id="str"></span></p><script src="assets/js/tyeffect.js"></script>
+
+<pre style="color: #00FF00;">
+                      :::!~!!!!!:.
+                  .xUHWH!! !!?M88WHX:.
+                .X*#M@$!!  !X!M$$$$$$WWx:.
+               :!!!!!!?H! :!$!$$$$$$$$$$8X:
+              !!~  ~:~!! :~!$!#$$$$$$$$$$8X:
+             :!~::!H!<   ~.U$X!?R$$$$$$$$MM!
+             ~!~!!!!~~ .:XW$$$U!!?$$$$$$RMM!
+               !:~~~ .:!M"T#$$$$WX??#MRRMMM!
+               ~?WuxiW*`   `"#$$$$8!!!!??!!!
+             :X- M$$$$       `"T#$T~!8$WUXU~
+            :%`  ~#$$$m:        ~!~ ?$$$$$$
+          :!`.-   ~T$$$$8xx.  .xWW- ~""##*"
+.....   -~~:<` !    ~?T#$$@@W@*?$$      /`
+W$@@M!!! .!~~ !!     .:XUW$W!~ `"~:    :
+#"~~`.:x%`!!  !H:   !WM$$$$Ti.: .!WUn+!`
+:::~:!!`:X~ .: ?H.!u "$$$B$$$!W:U!T$$M~
+.~~   :X@!.-~   ?@WTWo("*$$$W$TH$! `
+Wi.~!X$?!-~    : ?$$$B$Wu("**$RM!
+$R@i.~~ !     :   ~$$$$$B$$en:``
+?MXT@Wx.~    :     ~"##*$$$$M~
+</pre>
+
+<p style="color:red; letter-spacing: 2px;">YOUR INFO:</p>
+<div id="ip">loading your info.......</div>
+
+<p style="color:#7289da; letter-spacing: 2px;">MY DISCORD INFO:</p>
+<p>USER: frost#1000 <br>SERVER: discord.gg/??? </p>
+
+<h2> 
+<script type="text/javascript " src="https://code.jquery.com/jquery-latest.min.js "></script>
+    <script type="text/javascript ">
+        $.get('https://ipinfo.io/', function(response) {
+            $("#ip ").html('USER: ' + person + ' <br>LOCATED IN: ' + response.city + ', ' + response.region + '');
+        }, 'jsonp');
+
+        function refreshPage() {
+            window.location.reload();
+        }
+</script></h2>
+
+<p style="letter-spacing: 2px; color:lime;"<br> COMMANDS:</p>
+<p style="color:lime;"<br>> Type "socials" for my socials.<br>> Type "ls" to see all cmds. <br>> type "play" to play a song</p>
+
+<output></output><div id="command-line" class="command-line"><span id="a">root@rain</span>: <span id="b">~$</span><div class="cmd-text-area"><input class="command-line-area" autofocus /></div></div></div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script><script src="assets/js/vvv.min.js"></script>
+  
+<script>
+    $(function() {
+      var term = new Terminal('#command-line .command-line-area', '#rain-shell output');
+    });
+</script>
+  
+</div></body></html>

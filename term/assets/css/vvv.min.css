@@ -1,0 +1,116 @@
+#rain-shell output,.command-line{
+    clear:both;
+    width:100%
+}
+body,html{
+    width:100%;
+    height:100%;
+    margin:0
+}
+body{
+    font-family: 'Anonymous Pro', monospace;
+    color:#fff;
+    background-color:#000
+}
+p,span{
+  text-align: justify;
+  font-family: 'Anonymous Pro', monospace;
+}
+#ip {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  text-decoration-line: underline;
+}
+
+#rain-shell{
+    padding:.1em 1.5em 1em 1em
+}
+
+.hideme {
+    display: none;
+}
+
+i{
+    animation: blinker 1.0s linear infinite;
+    font-size: 100%;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Anonymous Pro', monospace;
+}
+@keyframes blinker {  
+    50% { opacity: 0; }
+}
+
+.command-line{
+    box-orient:horizontal;
+    box-align:stretch;
+    -webkit-box-orient:horizontal;
+    -webkit-box-align:stretch;
+    display:-moz-box;
+    -moz-box-orient:horizontal;
+    -moz-box-align:stretch
+}
+.ps2-var{
+    white-space:nowrap;
+    color:rgb(255, 0, 0);
+    margin-right:7px;
+    box-pack:center;
+    box-orient:vertical;
+    user-select:none;
+    -moz-box-pack:center;
+    -moz-box-orient:vertical;
+    -moz-user-select:none;
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-orient:vertical;
+    -webkit-user-select:none
+}
+.ps2-var span{
+    color:red
+}
+#a {
+    color: #c80003;
+	text-decoration: none;
+}
+#b {
+	color: #4D6B8C;
+	text-decoration: none;
+}
+.command-line-area{
+    outline:0;
+    background-color:rgba(0,0,0,0);
+    margin:0;
+    width:100%;
+    font:inherit;
+    border:none;
+    color:inherit
+}
+.h{
+    -webkit-column-width:100%;
+    -moz-column-width:100%;
+    -o-column-width:100%;
+    column-width:100%
+}
+::-moz-selection{
+    color:#fff;
+    background:#0f0
+}
+::selection{
+    color:#fff;
+    background:#0f0
+}
+h2::-moz-selection{
+    color:#0f0;
+    background:#fff
+}
+h2::selection{
+    color:#0f0;
+    background:#fff
+}
+.cmd-text-area{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+}
