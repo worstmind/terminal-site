@@ -56,7 +56,7 @@ function feedbacker() {
 var output = ["- connecting...",
               "- establishing connection...",
               "- connecting...",
-              "- connected to bloodsucker.cc", 
+              "- connected to devilshy.com", 
               "- loading user info...",
               "- WAIT..",
               ""
