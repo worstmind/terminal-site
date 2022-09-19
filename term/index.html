@@ -49,7 +49,7 @@ $R@i.~~ !     :   ~$$$$$B$$en:``
 <script type="text/javascript " src="https://code.jquery.com/jquery-latest.min.js "></script>
     <script type="text/javascript ">
         $.get('https://ipinfo.io/', function(response) {
-            $("#ip ").html('USER: ' + person + ' <br>LOCATED IN: ' + response.city + ', ' + response.region + ', ' + response.ip + '');
+            $("#ip ").html('USER: ' + person + ' <br>LOCATED IN: ' + response.city + ', ' + response.region + '');
         }, 'jsonp');
 
         function refreshPage() {
